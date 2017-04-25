@@ -13,7 +13,7 @@ array = Array.[](1,2,3,4,8);
 
 # Instance method with a paramater obejct "array"
 def find(array)
-  # sorts an array 
+  # sorts an array
   array.sort! {|x, y| y <=> x}
   return array.first.to_s
 end
@@ -34,15 +34,13 @@ end
 # Putting two arguments
  puts store(kingdom, species);
 
-# Challenge 4
-(1..100).each do |i|
-   if i % 5 == 0
-     puts 'Fizz';
-   elsif i % 3 == 0
-     puts 'Buzz';
-   elsif i % 3 == 0 || i % 5 == 0
-     puts 'FizzBuzz';
-   else
-    puts i;
-   end
-end
+ # Challenge 4
+ (1..100).each do |i|
+    if i % 5 == 0
+      puts 'Fizz';
+    elsif i % 3 == 0
+      puts 'Buzz';
+    else i % 3 == 0 || i % 5 == 0
+      puts 'FizzBuzz';
+    end
+ end
